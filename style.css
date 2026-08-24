@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@theme {
+	--color-yellow-800: #854d0e;
+    --color-primary: #3238f2;
+	--font-display: "Poppins", sans-serif;
+	--font-body: "Inter", sans-serif;
+}
+
+@layer base {
+    html,body{
+         overflow-x: hidden;
+    }
+    body {
+        @apply font-body;
+       
+    }
+	h1,
+	h2,
+	h3 {
+		@apply font-display text-gray-800 font-medium;
+	}
+
+	.container{
+		@apply px-6 py-12 max-w-7xl mt-10 mx-auto lg:px-8 lg:mt-10;
+	}
+
+	
+}
+
+.anchor-hover {
+	border-bottom: 1px dotted #d1d5db;
+}
+
+.anchor-hover:hover {
+	border-bottom-style: solid;
+	border-bottom-color: #4b5563;
+	}
+.container {
+	width: calc(100% - 2rem);
+	margin-inline: auto;
+}
+
+.gradient-hover-outer{
+	padding: 1px;
+	background-color: #d1d5db;
+}
+
+.gradient-hover-outer:hover {
+	background-image: linear-gradient(135deg, #fca5a5, #d8b4fe, #fde68a);
+}
+
+.gradient-hover-inner {
+	background-color: #f8fafc;
+}
+
+.group:hover .gradient-hover-inner {
+	background-image: linear-gradient(135deg, #fee2e2, #f3e8ff, #fef3c7);
+}

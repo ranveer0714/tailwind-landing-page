@@ -1,0 +1,144 @@
+Tilwind is actually is design system.
+It's provided thausand of small utility classes that map to CSS properties.
+In css
+for ex :- 
+color:white;
+display : flex;
+padding : 16;
+In tailwind 
+for ex :- 
+text-white
+flex
+p-4
+
+Utility first CSS 
+What is utility?
+Utility means one small class that does one specific job.
+ex:- css
+color: white;(This change only text color).
+
+ex:- In tailwind
+text-white
+
+NOTE :- Instead of using Traditional CSS with multiple line of css code for create multiple button tailwind says build the button form utilities.
+
+ex :- <button class="bg-blue-500 text-white px-6 py-3 rounded-lg font-bold">
+Login
+</button>
+Every class has only one responsiblities.
+it means that the above button property is:
+
+bg-blue-500 --> Blue Background
+text-white --> White text
+rounded-lg --> Rounded corners
+font-bold --> Bold font
+
+after combine them we have a butiful button.
+
+Tailwind doesn't replace CSS.Tailwind is still CSS.
+For every Tailwind class, there is CSS behind the scenes.
+
+for ex :- if we write (class="text-center")
+Tailwind internally generates
+(text-align:center;)
+
+for ex :- if we write (class="font-bold")
+Tailwind internally generates
+(font-weight:700;)
+
+Understand Class Names
+Tailwind class names follow a consistent pattern.
+
+Property Value
+ex :- text-white
+text means text
+white means White color
+
+ex :- bg-red-500
+bg means Background
+red means Red color 
+500 means Medium shade
+
+ex :- font-bold
+font means Font 
+bold means Bold weight
+
+Something Very Important
+if we use color 
+Always provide color name color shade 
+ex:- text-blue-500
+Rembember:
+1.White
+2.Black
+3.Transparent
+4.Current
+These don't have shades.
+ex :-
+bg-white
+text-white
+bg-black
+text-black
+
+Always Rembember font is never color
+font-bold
+font-light
+font-semibold
+font-black
+font-thin
+
+Lesson 3 – Spacing (Padding & Margin)
+padding :- Inside Spacing (Move content away from border)
+Margin :- Outside Spacing (Move the whole element away from the other element)
+CSS version :- padding:20px;, Margin:20px;
+Tailwind version :- p-5 m-5
+
+** Tailwind doesn't uses pixel directly in these utility names.
+It uses a predefined spacing scale.
+Tailwind                          CSS Value
+p-0                                 0px
+p-0.5	                            2px
+p-1	                                4px
+p-1.5	                            6px
+p-2	                                8px
+p-2.5	                            10px
+p-3	                                12px
+p-4	                                16px
+p-5	                                20px
+p-6	                                24px
+p-8	                                32px
+p-10	                            40px
+p-12	                            48px
+p-16	                            64px
+p-20	                            80px
+p-24	                            96px
+
+** p-1 == 4px (multiple of 4)
+p means padding in all sides
+
+px means Left + Right padding
+ex :- 
+CSS :- padding-left:24px;, padding-right:24px;
+Tailwind :- px-6
+
+py means Top + Bottom
+ex:- 
+CSS :- padding-top:20px, padding-bottom:20px;
+Tailwind :- py-5
+
+Easy Way to Remember
+Utility	Meaning 
+
+p/m	All sides      
+px/mx	    Left + Right
+py/my	    Top + Bottom
+pt/mt	    Top
+pb/mb	    Bottom
+pl/ml	    Left
+pr/mr	    Right
+
+NEGATIVE MARGIN
+-m-4 //negative margin 
+
+Chapter 7 - space-x-* and sapce-y-*
+
+
